@@ -20,7 +20,8 @@ include 'includes/header.php';
     <div class="row d-flex justify-content-center align-items-center m-0 " style="height: 100vh; ">
       <div class="login_oueter rounded">
         <div class="col-md-12 logo_outer ">
-          <img class="my-2" src="images/LIS logo.png" class="w-40 h-20" alt="..." />
+          <img class="my-2" src="images/LIS logo.png" class="w-40 h-20 " alt="..." />
+          
         </div>
         <form action="login.php" method="post" id="login" autocomplete="off" class="bg-light border p-3">
           <div class="form-row text-center ">
