@@ -45,20 +45,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // If no errors, insert into database
+    
     if (empty($errors)) {
         $sql = "INSERT INTO tbl_facultyinfo (EmployeeID, lname, fname, mname, addressa, emailadd, cnumber, bdate, cstatus, gender, position, appdate) 
                 VALUES ('$EmployeeID', '$lname', '$fname', '$mname', '$addressa', '$emailadd', '$cnumber', '$bdate', '$cstatus', '$gender', '$position', '$appdate')";
         
         if ($conn->query($sql) === TRUE) {
+          echo "<script>window.location.href = 'Facultyregistration.php'</script>";
             $success = "Registration successful!";
            
         } else {
             $errors[] = "Error: " . $conn->error;
         }
     }
+  }
     
     $conn->close();
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

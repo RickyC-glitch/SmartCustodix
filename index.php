@@ -17,7 +17,7 @@ include 'includes/header.php';
 
 <body>
   <div class="container-fluid">
-    <div class="row d-flex justify-content-center align-items-center m-0 " style="height: 100vh; ">
+    <div class="row d-flex justify-content-center align-items-center m-0 " style="height: 80vh; ">
       <div class="login_oueter rounded">
         <div class="col-md-12 logo_outer ">
           <img class="my-2" src="images/LIS logo.png" class="w-40 h-20 " alt="..." />
