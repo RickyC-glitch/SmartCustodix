@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 VALUES ('$EmployeeID', '$lname', '$fname', '$mname', '$addressa', '$emailadd', '$cnumber', '$bdate', '$cstatus', '$gender', '$position', '$appdate')";
         
         if ($conn->query($sql) === TRUE) {
-          echo "<script>window.location.href = 'Facultyregistration.php'</script>";
+          
             $success = "Registration successful!";
            
         } else {
