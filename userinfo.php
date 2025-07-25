@@ -9,11 +9,7 @@ include 'sql/dbconnect.php';
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>LIS ASRS</title>
-    <link rel="icon" type="image/x-icon" href="images/lamhako logo.png">
+    
 </head>
 
 <body>
@@ -56,12 +52,7 @@ include 'sql/dbconnect.php';
             });
         });
     </script>
-    <!--header-->
-    <div class="container-md container-fluid shadow-lg text-center">
-        <img src="images/banner2.jpg">
-        <h3 class="card-header text-center bg-dark text-light"><i class="fa-solid fa-users"></i> USERS INFORMATION</h3>
-    </div>
-    <!--header-->
+   
 
     <div class="container-md container-fluid shadow-lg">
         <div class="row ">
