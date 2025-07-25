@@ -61,8 +61,8 @@
               User & Account Management
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">User Accounts</a></li>
-              <li><a class="dropdown-item" href="#">Faculty Information</a></li>
+              <li><a class="dropdown-item" href="userinfo.php">User Accounts</a></li>
+              <li><a class="dropdown-item" href="facultyinfo.php">Faculty Information</a></li>
               <li><a class="dropdown-item" href="#">Account Settings</a></li>
             </ul>
           </li>
@@ -241,10 +241,11 @@
     new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Bond Paper A4 ', 'Epson ink Black ', 'Bond Paper short '],
+        
         datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          label: 'Low Stocks',
+          data: [8, 5, 3],
           borderWidth: 1
         }]
       },
@@ -261,10 +262,10 @@
     new Chart(ctxbar, {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Bond Paper A4 ', 'Chalk', 'Epson ink black '],
         datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          label: 'Most Requested',
+          data: [60, 25, 32],
           borderWidth: 1
         }]
       },
