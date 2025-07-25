@@ -81,22 +81,157 @@
     </div>
   </div>
 </nav>
-<!--Header Dashboard-->
-  <header class="bg-primary d-flex align-items-center text-white pt-5 mt-5">
-          <div class="container-fluid">
-              <div class="row align-items-center">
-                  <div class="col-md-5">
-                    <h1 class="header-title"> SmartCustodiX </h1>
-                    <p>"Empowering school inventory management through intelligent automation.""<br> <br>SmartCustodix is an AI-enhanced, web-based property custodian management system designed for Lamhako Integrated School. It simplifies inventory tracking, automates supply requisitions, and provides real-time insights for smarter school resource management.</p>
-                  </div>
-                  <div class="col-md-7">
-                  <img src="images/stocklevel.jpg" class="img-fluid" alt="Header Image">
-                  </div>
+<div class="container-md container-fluid shadow-lg">
+        <!--navbar-->
+        <div class="container-md-fluid shadow-lg text-center">
+        
 
+        </div>
+        <nav class="navbar" style="background-color: #e3f2fd;" >
+            <div class="container-fluid justify-content-end gap-3 ">
+
+                <a class="navbar-brand " href="" id="btnnew" name="btnnew ">
+                <i class="fa-solid fa-print"></i> Print Reports
+                </a>
+                <a class="navbar-brand " href="" id="btnnew" name="btnnew ">
+                <i class="fa-sharp fa-regular fa-pen-to-square"></i></i> Change Password 
+                </a>
+
+                <a class="navbar-brand " href="index.php" id="btnnew" name="btnnew ">
+                <i class="fa-solid fa-right-from-bracket"></i> Log-out 
+                </a>
+
+                
+                
             </div>
 
-          </div>
-  </header>
+        </nav>
+        <!--navbar-->
+    <div class="container shadow-lg">
+        <hr class="my-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-4">
+                <div class="card" style="width: auto;">
+                    <img src="images/pending.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pending Request</h5>
+                        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                        <div class="text-center">
+                            <button class="btn btn-primary position-relative">
+                                Show
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    10
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <div class="card" style="width: auto;">
+                    <img src="images/approved.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Approved Request</h5>
+                        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                        <div class="text-center">
+                            <button class="btn btn-primary position-relative">
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    5
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                                Show</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <div class="card" style="width: auto;">
+                    <img src="images/stocklevel.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Stock Levels</h5>
+                        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                        <div class="text-center">
+                            <button class="btn btn-primary">Show</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <hr class="my-3">
+        <div class="row justify-content-center my-2">
+            <div class="col-lg-3 col-md-3">
+                <div class="card" style="width: auto;">
+                    <img src="images/faculty.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Faculty Information</h5>
+                        <div class="text-center">
+                           
+                            <form action="facultyinfo.php" method="post">
+                                <button type="submit" class="btn btn-primary">Manage</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="card" style="width: auto;">
+                    <img src="images/user.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">User Information</h5>
+                        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                        <div class="text-center">
+                        <form action="userinfo.php" method="post">
+                                <button type="submit" class="btn btn-primary">Manage</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="card" style="width: auto;">
+                    <img src="images/asset.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">School Asset Information</h5>
+                        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                        <div class="text-center">
+                            <button class="btn btn-primary">Manage</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="card" style="width: auto;">
+                    <img src="images/supply.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">School Supply information</h5>
+                        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                        <div class="text-center">
+                            <button class="btn btn-primary">Manage</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+<?php include 'includes/footer.php';?>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
