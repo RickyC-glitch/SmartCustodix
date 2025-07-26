@@ -65,21 +65,21 @@ include 'sql/dbconnect.php';
         });
     </script>
     <!--header-->
-    <div class="container-md container-fluid shadow-lg text-center">
+    <div class="container-fluid shadow-lg text-center">
         
         <h3 class="card-header text-center bg-dark text-light"><i class="fa-solid fa-users"></i> FACULTY INFORMATION</h3>
     </div>
     <!--header-->
 
-    <div class="container-md container-fluid shadow-lg">
+    <div class="container-fluid shadow-lg">
         <!--navbar-->
         <nav class="navbar bg-primary" >
-            <div class="container-fluid justify-content-end gap-3 ">
+            <div class="container-fluid justify-content-center gap-3 ">
 
                 
                 <a class="navbar-brand text-light" href="#" id="btnnew" name="btnnew "
                     data-bs-toggle="modal" data-bs-target="#modteacherreg">
-                    <i class="fa-sharp fa-solid fa-user-plus"></i>  Register   
+                    <i class="fa-sharp fa-solid fa-user-plus"></i>  New   
                 </a>
 
                 <a class="navbar-brand text-light" href="printfaculty.php" id="btnprint" name="btnprint">
@@ -90,11 +90,7 @@ include 'sql/dbconnect.php';
                     <i class="fa-sharp fa-solid fa-house"></i> Home 
                 </a>
 
-                <a class="navbar-brand text-light" href="index.php">
-                    <i class="fa-solid fa-right-from-bracket"></i> Log-out 
-                </a>
-
-                
+                             
                 
             </div>
 

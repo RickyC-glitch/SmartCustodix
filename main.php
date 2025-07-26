@@ -91,24 +91,33 @@
     <div class="container-fluid">
       <div class="row align-items-center">
         <!--bar Chart-->
-        <div class=" col-md-6 col-lg-6">
-          <div>
-            <canvas id="barchart"></canvas>
-          </div>
-
-        </div>
-        <!--Line Chart-->
-        <div class="col-md-6 col-lg-6">
+        <div class=" col-md-4 col-lg-4">
           <div>
             <canvas id="linechart"></canvas>
           </div>
 
-
         </div>
+        <!--Line Chart-->
+        <div class="col-md-4 col-lg-4">
+          <div>
+            <canvas id="barchart"></canvas>
+          </div>
+        </div>
+
+        <!--Line Chart-->
+        <div class="col-md-4 col-lg-4">
+          <div>
+            <canvas id="piechart"></canvas>
+          </div>
+        </div>
+
 
       </div>
 
+
     </div>
+
+
 
 
   </header>
@@ -242,9 +251,11 @@
       type: 'line',
       data: {
         labels: ['Bond Paper A4 ', 'Epson ink Black ', 'Bond Paper short '],
-        
+
         datasets: [{
           label: 'Low Stocks',
+          backgroundColor: ["red","red","red"], // Example background color
+          borderColor: ["yellow","yellow","yellow"], // Example border color
           data: [8, 5, 3],
           borderWidth: 1
         }]
@@ -264,8 +275,28 @@
       data: {
         labels: ['Bond Paper A4 ', 'Chalk', 'Epson ink black '],
         datasets: [{
-          label: 'Most Requested',
+          label: 'Most Requested Supplies',
+         
           data: [60, 25, 32],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+      }
+    });
+  </script>
+  <script>
+    const ctxpie = document.getElementById('piechart');
+
+    new Chart(ctxpie, {
+      type: 'doughnut',
+      data: {
+        labels: ['Pending Request'],
+        datasets: [{
+          label: 'Pending',
+          data: [10],
           borderWidth: 1
         }]
       },

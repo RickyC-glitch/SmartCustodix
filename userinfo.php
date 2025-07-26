@@ -57,7 +57,7 @@ include 'sql/dbconnect.php';
     <div class="container-md container-fluid shadow-lg">
         <div class="row ">
 
-            <div class="col-3 shadow-lg bg-light text-white my-4">
+            <div class="col-12 shadow-lg bg-light text-white my-4">
                 
                     <ul class="nav flex-column">
                         
